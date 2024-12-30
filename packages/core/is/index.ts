@@ -82,7 +82,7 @@ export function isBoolean(val: unknown): val is boolean {
  * @description: Checks if the value is an array.
  */
 export function isArray(val: any): val is Array<any> {
-  return val && Array.isArray(val);
+  return Array.isArray(val);
 }
 
 /**
