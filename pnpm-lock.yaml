@@ -53,6 +53,9 @@ importers:
       eslint-plugin-react-hooks:
         specifier: ^4.6.2
         version: 4.6.2(eslint@8.57.1)
+      happy-dom:
+        specifier: ^16.0.1
+        version: 16.0.1
       husky:
         specifier: ^9.0.11
         version: 9.1.7
@@ -100,7 +103,7 @@ importers:
         version: 5.7.2
       vitest:
         specifier: ^2.1.3
-        version: 2.1.8(@types/node@18.19.68)(jsdom@25.0.1)
+        version: 2.1.8(@types/node@18.19.68)(happy-dom@16.0.1)(jsdom@25.0.1)
 
   packages/core:
     devDependencies:
@@ -4239,6 +4242,14 @@ packages:
       uglify-js: 3.19.3
     dev: true
 
+  /happy-dom@16.0.1:
+    resolution: {integrity: sha512-cqbqvutE6XAIMe4nM93TkbW5SDFtLkU/6nsQfJBJ2KSlaT+My2kmnYsCFXrvEzvmP7s1xGJ6Xt4D9LNJIJHMbA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      webidl-conversions: 7.0.0
+      whatwg-mimetype: 3.0.0
+    dev: true
+
   /hard-rejection@2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -7850,7 +7861,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vitest@2.1.8(@types/node@18.19.68)(jsdom@25.0.1):
+  /vitest@2.1.8(@types/node@18.19.68)(happy-dom@16.0.1)(jsdom@25.0.1):
     resolution: {integrity: sha512-1vBKTZskHw/aosXqQUlVWWlGUxSJR8YtiyZDJAFeW2kPAeX6S3Sool0mjspO+kXLuxVWlEDDowBAeqeAQefqLQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -7886,6 +7897,7 @@ packages:
       chai: 5.1.2
       debug: 4.4.0
       expect-type: 1.1.0
+      happy-dom: 16.0.1
       jsdom: 25.0.1
       magic-string: 0.30.17
       pathe: 1.1.2
@@ -7976,6 +7988,11 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       iconv-lite: 0.6.3
+    dev: true
+
+  /whatwg-mimetype@3.0.0:
+    resolution: {integrity: sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==}
+    engines: {node: '>=12'}
     dev: true
 
   /whatwg-mimetype@4.0.0:
