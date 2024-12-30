@@ -9,11 +9,11 @@ importers:
   .:
     devDependencies:
       '@commitlint/cli':
-        specifier: ^18.5.0
-        version: 18.6.1(@types/node@18.19.68)(typescript@5.7.2)
+        specifier: 18.4.3
+        version: 18.4.3(@types/node@18.19.68)(typescript@5.7.2)
       '@commitlint/config-conventional':
-        specifier: ^18.5.0
-        version: 18.6.3
+        specifier: 18.4.3
+        version: 18.4.3
       '@turbo/gen':
         specifier: ^1.11.3
         version: 1.13.4(@types/node@18.19.68)(typescript@5.7.2)
@@ -157,8 +157,8 @@ packages:
       regenerator-runtime: 0.14.1
     dev: true
 
-  /@commitlint/cli@18.6.1(@types/node@18.19.68)(typescript@5.7.2):
-    resolution: {integrity: sha512-5IDE0a+lWGdkOvKH892HHAZgbAjcj1mT5QrfA/SVbLJV/BbBMGyKN0W5mhgjekPJJwEQdVNvhl9PwUacY58Usw==}
+  /@commitlint/cli@18.4.3(@types/node@18.19.68)(typescript@5.7.2):
+    resolution: {integrity: sha512-zop98yfB3A6NveYAZ3P1Mb6bIXuCeWgnUfVNkH4yhIMQpQfzFwseadazOuSn0OOfTt0lWuFauehpm9GcqM5lww==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
@@ -177,11 +177,10 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@18.6.3:
-    resolution: {integrity: sha512-8ZrRHqF6je+TRaFoJVwszwnOXb/VeYrPmTwPhf0WxpzpGTcYy1p0SPyZ2eRn/sRi/obnWAcobtDAq6+gJQQNhQ==}
+  /@commitlint/config-conventional@18.4.3:
+    resolution: {integrity: sha512-729eRRaNta7JZF07qf6SAGSghoDEp9mH7yHU0m7ff0q89W97wDrWCyZ3yoV3mcQJwbhlmVmZPTkPcm7qiAu8WA==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.1
       conventional-changelog-conventionalcommits: 7.0.2
     dev: true
 
