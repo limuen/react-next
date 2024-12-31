@@ -110,6 +110,9 @@ importers:
       '@limuen/ts-config':
         specifier: workspace:*
         version: link:../ts-config
+      tsup:
+        specifier: ^8.0.2
+        version: 8.3.5(postcss@8.4.49)(typescript@5.7.2)
 
   packages/ts-config: {}
 

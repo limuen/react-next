@@ -7,10 +7,17 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "main": "dist/vite.config.js",
-  "types": "dist/vite.config.d.ts",
+  "main": "./dist/vite.config.js",
+  "types": "./dist/vite.config.d.ts",
   "scripts": {
     "build": "tsup"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/vite.config.d.ts",
+      "import": "./dist/vite.config.js",
+      "require": "./dist/vite.config.cjs"
+    }
   },
   "dependencies": {
     "@vitejs/plugin-react-swc": "^3.5.0",

@@ -10,7 +10,7 @@
     "lint:eslint": "eslint . --fix",
     "prepare": "husky install",
     "lint:lint-staged": "lint-staged",
-    "commit": "git add -A && git pull && git-cz && git push",
+    "commit": "git add -A && git pull && echo '开始提交...' && git-cz || echo '提交失败' && git push",
     "test": "vitest",
     "release": "standard-version"
   },

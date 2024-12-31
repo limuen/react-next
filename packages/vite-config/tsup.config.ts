@@ -11,7 +11,7 @@ export default defineConfig(() => {
     // 是否压缩代码
     minify: true,
     // 输出格式
-    format: "esm",
+    format: ["esm", "cjs"],
     // 是否进行拆分
     splitting: false,
     // 忽略监听的文件
