@@ -2,13 +2,13 @@
   "$schema": "https://turbo.build/schema.json",
   "globalEnv": [".env"],
   "tasks": {
-    "defaultProject#dev": {
+    "react19-feature#dev": {
       "dependsOn": ["@limuen/vite-config#build", "@limuen/core#build"],
       "cache": false,
       "persistent": true,
       "env": [".env.development.local", ".env.development", ".env.local", ".env"]
     },
-    "defaultProject#build": {
+    "react19-feature#build": {
       "dependsOn": ["@limuen/vite-config#build", "@limuen/core#build"],
       "outputs": ["dist/**"],
       "env": [".env.development.local", ".env.development", ".env.local", ".env"]
