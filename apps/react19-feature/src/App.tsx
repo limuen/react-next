@@ -1,11 +1,13 @@
 import Header from "./components/Header";
+import Dashboard from "./views/dashboard";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Header />
+      <Dashboard />
     </>
   );
-}
+};
 
 export default App;

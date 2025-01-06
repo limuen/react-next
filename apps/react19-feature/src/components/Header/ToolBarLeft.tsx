@@ -16,9 +16,9 @@ const NavHeaderLeft: React.FC = () => {
         {headerNavLinks.map((item, index) => (
           <motion.div
             key={item.key}
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: -40, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: index * 0.3 }}
           >
             <div className="ml-10 text-gray-500 cursor-pointer select-none hover:text-gray-900">{item.text}</div>
           </motion.div>
