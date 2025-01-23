@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@limuen/core": "workspace:*",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.471.1",
     "motion": "^11.15.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "^6.23.1",
     "react-syntax-highlighter": "^15.6.1",
     "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
@@ -34,7 +38,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^5.3.2",
+    "vite": "^6.0.5",
     "vite-plugin-svg-icons": "^2.0.1"
   }
 }

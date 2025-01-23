@@ -4,7 +4,7 @@ interface ShowProps {
   children: React.ReactNode;
 }
 
-export default function Show(props: ShowProps) {
+export const Show = (props: ShowProps) => {
   const { when, fallback = null, children } = props;
   return when ? children : fallback;
-}
+};

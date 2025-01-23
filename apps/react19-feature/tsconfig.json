@@ -7,6 +7,6 @@
     },
     "types": ["node", "prettier"]
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "vite.config.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "vite.config.ts", "**/*.d.ts"],
   "exclude": ["node_modules"]
 }
