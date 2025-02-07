@@ -1,8 +1,6 @@
 {
   "extends": "@limuen/ts-config/base.json",
-  "compilerOptions": {
-    "types": ["node", "vite/client"]
-  },
+  "compilerOptions": {},
   "include": ["**/*.ts", "**/*.d.ts", "typings/**/*"],
   "exclude": ["node_modules"]
 }
