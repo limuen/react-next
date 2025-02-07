@@ -50,7 +50,7 @@ export const createLogStyle = (theme: logConfigThemeIF) => {
 
 // 添加一段信息用于标记是应用输出的日志
 export const createLogPrefix = (type: LogConfigIF, moduleName: string) => {
-  let message = `[${import.meta.env.VITE_APP_PROJECT_NAME}][${type.name}]`;
+  let message = `[${process.env.VITE_APP_PROJECT_NAME}][${type.name}]`;
   if (moduleName) {
     message += `[${moduleName}]`;
   }
@@ -67,7 +67,7 @@ const _printLogInDevTools = (messages: any, theme: logConfigThemeIF) => {
 // 打印日志
 const _printLog = (type: LogConfigIF, messages: any) => {
   // 生产环境下不执行
-  if (!import.meta.env.VITE_NODE_ENV) {
+  if (!process.env.VITE_NODE_ENV) {
     return;
   }
   const title = isString(messages[0]) ? messages[0] : "";
